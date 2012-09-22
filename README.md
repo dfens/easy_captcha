@@ -6,7 +6,7 @@ EasyCaptcha is lightweight gem providing possibility to generate captcha image t
 
 Just add dependency to your gemfile:
 
-    gem 'easy_captcha'
+    gem 'easy_captcha', :git => "git@github.com:dfens/easy_captcha.git"
 
 ## Usage
 
