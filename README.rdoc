@@ -1,0 +1,15 @@
+= EasyCaptcha
+
+EasyCaptcha is lightweight gem providing possibility to generate captcha image to your website. If you can't use imagemagick or use external services like recaptcha see this gem.
+
+== Installation
+
+Just add dependency to your gemfile:
+
+    gem 'easy_captcha'
+
+In your view:
+
+<%= easy_captcha("ASDF") %>
+
+This project rocks and uses MIT-LICENSE.
