@@ -2,7 +2,8 @@ PATH
   remote: .
   specs:
     easy_captcha (0.0.1)
-      rails (~> 3.2.8)
+      chunky_png
+      rails
 
 GEM
   remote: http://rubygems.org/
@@ -90,6 +91,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  chunky_png
   easy_captcha!
   sqlite3
