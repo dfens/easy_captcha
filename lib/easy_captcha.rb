@@ -1,6 +1,5 @@
 require 'easy_captcha/captcha'
-require 'easy_captcha/easy_captcha_action_view'
+require 'easy_captcha/railtie' if defined?(Rails)
 
 module EasyCaptcha
-
 end
