@@ -24,7 +24,10 @@ module EasyCaptcha
     def self.create(text, options)
       raise "Invalid EasyCaptcha text input" unless text =~ /^[a-zA-Z]+$/
 
-      text  = text.downcase
+      # Prepare method arguments
+      options = options.reverse_merge(distortion: false, snow: false)
+      text    = text.downcase
+
       width = text.length * LETTER_WIDTH
       png   = ChunkyPNG::Image.new(width, LETTER_HEIGHT, ChunkyPNG::Color::TRANSPARENT)
 
